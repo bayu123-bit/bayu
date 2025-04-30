@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Pesan Bucin Buat Kamu ❤️</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: #fff0f5;
+            color: #ff1493;
+            text-align: center;
+            margin-top: 100px;
+        }
+        #pesan {
+            font-size: 24px;
+            white-space: pre-line;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hallo efi anggraeni 😘</h1>
+    <div id="pesan"></div>
+
+    <script>
+        const pesan = [
+            "Aku punya 3 alasan kenapa aku terus mikirin kamu...",
+            "1. Kamu manis banget ❤️",
+            "2. Kamu selalu bikin aku senyum 😊",
+            "3. Karena kamu... adalah takdirku 😍",
+            "",
+            "Boleh nggak aku terus jadi alasan senyum kamu tiap hari? 🥺"
+        ];
+
+        let index = 0;
+        function tampilkanPesan() {
+            if (index < pesan.length) {
+                document.getElementById("pesan").innerText += pesan[index] + "\n";
+                index++;
+                setTimeout(tampilkanPesan, 1500);
+            }
+        }
+
+        tampilkanPesan();
+    </script>
+</body>
+</html>
